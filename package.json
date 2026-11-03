@@ -1,0 +1,17 @@
+{
+  "name": "csr-vanilla-azure-swa-deployment-bundle",
+  "version": "1.1.0",
+  "private": true,
+  "description": "CSR Vanilla HTML Azure Static Web Apps (SWA) deployment bundle with universal multi-SWA Azure Functions XML Sitemap (public/, api/, staticwebapp.config.json, swa-cli.config.json)",
+  "scripts": {
+    "install:api": "cd api && npm install",
+    "start": "npx @azure/static-web-apps-cli start public --api-location api",
+    "deploy": "npx @azure/static-web-apps-cli deploy public --api-location api --env production"
+  },
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

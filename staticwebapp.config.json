@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json.schemastore.org/staticwebapp.config.json",
+  "routes": [
+    {
+      "route": "/sitemap.xml",
+      "rewrite": "/api/sitemap",
+      "allowedRoles": [
+        "anonymous"
+      ],
+      "headers": {
+        "Content-Type": "application/xml; charset=UTF-8",
+        "Cache-Control": "no-store, must-revalidate"
+      }
+    },
+    {
+      "route": "/api/sitemap.xml",
+      "rewrite": "/api/sitemap",
+      "allowedRoles": [
+        "anonymous"
+      ],
+      "headers": {
+        "Content-Type": "application/xml; charset=UTF-8",
+        "Cache-Control": "no-store, must-revalidate"
+      }
+    },
+    {
+      "route": "/atom.xml",
+      "rewrite": "/api/atom",
+      "allowedRoles": [
+        "anonymous"
+      ],
+      "headers": {
+        "Content-Type": "application/atom+xml; charset=UTF-8",
+        "Cache-Control": "no-store, must-revalidate"
+      }
+    },
+    {
+      "route": "/feed.xml",
+      "rewrite": "/api/atom",
+      "allowedRoles": [
+        "anonymous"
+      ],
+      "headers": {
+        "Content-Type": "application/atom+xml; charset=UTF-8",
+        "Cache-Control": "no-store, must-revalidate"
+      }
+    },
+    {
+      "route": "/atom",
+      "rewrite": "/api/atom",
+      "allowedRoles": [
+        "anonymous"
+      ],
+      "headers": {
+        "Content-Type": "application/atom+xml; charset=UTF-8",
+        "Cache-Control": "no-store, must-revalidate"
+      }
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html",
+      "statusCode": 404
+    }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff"
+  },
+  "mimeTypes": {
+    ".xml": "application/xml; charset=UTF-8",
+    ".html": "text/html; charset=UTF-8",
+    ".txt": "text/plain; charset=UTF-8"
+  }
+}

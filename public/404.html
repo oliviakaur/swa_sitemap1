@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Page Not Found - Technical Reference</title>
+  <link id="canonical-url" rel="canonical" href="https://bunbunserver.my.id/">
+  <meta id="meta-robots" name="robots" content="noindex, nofollow">
+  <meta id="meta-seo" name="description" content="The requested technical specification or category page could not be found.">
+
+  <!-- Socket Pool Discipline: Max 3 Static Preconnect Origins -->
+  <link rel="preconnect" href="https://bunbunserver.my.id" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+  <!-- Non-Blocking Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+  </noscript>
+
+  <script>
+  (function () {
+    'use strict';
+    var loc = window.location;
+    var origin = (loc.origin && loc.origin !== 'null') ? loc.origin : (loc.protocol + '//' + (loc.host || 'localhost'));
+    var hostTitle = (loc.hostname && loc.hostname !== 'localhost' && loc.hostname !== '127.0.0.1')
+      ? loc.hostname
+      : 'Technical Reference';
+
+    document.title = 'Page Not Found - ' + hostTitle;
+    var canonicalEl = document.getElementById('canonical-url');
+    if (canonicalEl) canonicalEl.setAttribute('href', origin + (loc.pathname || '/') + (loc.search || ''));
+
+    window.__AZURE_404_BOOT__ = {
+      origin: origin,
+      hostTitle: hostTitle,
+      requestedPath: (loc.pathname || '/') + (loc.search || '')
+    };
+  })();
+  </script>
+
+  <style id="theme-styles">
+    :root {
+      --bb-bg-body: #f8fafc;
+      --bb-bg-surface: #ffffff;
+      --bb-bg-subtle: #f1f5f9;
+      --bb-text-primary: #0f172a;
+      --bb-text-secondary: #334155;
+      --bb-text-muted: #64748b;
+      --bb-accent: #2563eb;
+      --bb-accent-hover: #1d4ed8;
+      --bb-border: #e2e8f0;
+      --bb-danger: #dc2626;
+      --bb-danger-soft: #fef2f2;
+      --bb-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --bb-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --bb-container-max: 1160px;
+      --bb-radius-sm: 6px;
+      --bb-radius-lg: 14px;
+      --bb-radius-pill: 9999px;
+      --bb-shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+      --bb-shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08);
+    }
+
+    html[data-theme="dark"] {
+      --bb-bg-body: #0b0f19;
+      --bb-bg-surface: #111827;
+      --bb-bg-subtle: #1e293b;
+      --bb-text-primary: #f8fafc;
+      --bb-text-secondary: #cbd5e1;
+      --bb-text-muted: #94a3b8;
+      --bb-accent: #3b82f6;
+      --bb-accent-hover: #60a5fa;
+      --bb-border: #1e293b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bb-bg-body);
+      color: var(--bb-text-primary);
+      font-family: var(--bb-font-sans);
+      font-size: 1rem;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: var(--bb-accent); text-decoration: none; }
+    a:hover { color: var(--bb-accent-hover); }
+    .bb-container { width: 100%; max-width: var(--bb-container-max); margin: 0 auto; padding: 0 1.25rem; }
+    .bb-header { background: var(--bb-bg-surface); border-bottom: 1px solid var(--bb-border); box-shadow: var(--bb-shadow-sm); }
+    .bb-header__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.85rem 0; }
+    .bb-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: 800; color: var(--bb-text-primary); }
+    .bb-brand__badge { background: var(--bb-accent); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: var(--bb-radius-sm); }
+    .bb-main { flex: 1; padding: 2.5rem 0 3.5rem; }
+    .bb-btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.45rem 0.95rem; border-radius: var(--bb-radius-pill); border: 1px solid transparent; background: var(--bb-accent); color: #fff; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+    .bb-btn:hover { background: var(--bb-accent-hover); color: #fff; }
+    .bb-btn--outline { background: transparent; border-color: var(--bb-border); color: var(--bb-text-secondary); }
+    .bb-btn--outline:hover { background: var(--bb-bg-subtle); color: var(--bb-text-primary); }
+    .bb-404-box { max-width: 620px; margin: 2rem auto; background: var(--bb-bg-surface); border: 1px solid var(--bb-border); border-radius: var(--bb-radius-lg); padding: 2.5rem 1.75rem; text-align: center; box-shadow: var(--bb-shadow-md); }
+    .bb-404-box__badge { display: inline-block; background: var(--bb-danger-soft); color: var(--bb-danger); font-family: var(--bb-font-mono); font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: var(--bb-radius-pill); margin-bottom: 0.75rem; }
+    .bb-footer { background: var(--bb-bg-surface); border-top: 1px solid var(--bb-border); padding: 1.5rem 0; font-size: 0.85rem; color: var(--bb-text-muted); }
+    .u-flex { display: flex; }
+    .u-flex-wrap { flex-wrap: wrap; }
+    .u-items-center { align-items: center; }
+    .u-justify-between { justify-content: space-between; }
+    .u-gap-xs { gap: 0.375rem; }
+    .u-gap-sm { gap: 0.75rem; }
+    .u-gap-md { gap: 1.25rem; }
+    .u-mb-sm { margin-bottom: 0.75rem; }
+    .u-mb-md { margin-bottom: 1.25rem; }
+    .u-text-muted { color: var(--bb-text-muted); }
+  </style>
+</head>
+<body>
+  <header class="bb-header" role="banner">
+    <div class="bb-container bb-header__inner">
+      <a class="bb-brand" data-route="/" href="#">
+        <span class="bb-brand__badge">SPEC</span>
+        <span id="bb-site-name">Technical Reference</span>
+      </a>
+      <div class="u-flex u-items-center u-gap-xs">
+        <a class="bb-btn bb-btn--outline" data-route="/?page=sitemap" href="#">Sitemap</a>
+        <button aria-label="Toggle dark mode" class="bb-btn bb-btn--outline" id="bb-theme-btn" type="button">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="bb-main" role="main">
+    <div class="bb-container">
+      <section class="bb-404-box" role="alert">
+        <span class="bb-404-box__badge">HTTP 404 &middot; PAGE NOT FOUND</span>
+        <h1 class="u-mb-sm" style="font-size:1.75rem;font-weight:800;">Page Not Found</h1>
+        <p class="u-text-muted u-mb-md">
+          The URL path you requested does not exist on this storage endpoint. All technical specifications use root query parameters (<code>/?category=...&amp;slug=...</code>).
+        </p>
+        <div class="u-flex u-gap-sm" style="justify-content:center;">
+          <a class="bb-btn" data-route="/" href="#">Return to Homepage</a>
+          <a class="bb-btn bb-btn--outline" data-route="/?page=sitemap" href="#">View Sitemap</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bb-footer" role="contentinfo">
+    <div class="bb-container u-flex u-flex-wrap u-items-center u-justify-between u-gap-md">
+      <div><strong id="bb-footer-brand">Technical Reference</strong></div>
+      <div class="u-flex u-flex-wrap u-gap-md">
+        <a data-route="/" href="#">Home</a>
+        <a data-route="/?page=sitemap" href="#">Sitemap</a>
+        <a id="bb-footer-atom-xml" rel="alternate" type="application/atom+xml" href="https://bunbunserver.my.id/atom.xml">Atom.xml</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+    var boot = window.__AZURE_404_BOOT__ || {};
+    var brand = boot.hostTitle || 'Technical Reference';
+    var b1 = document.getElementById('bb-site-name');
+    if (b1) b1.textContent = brand;
+    var b2 = document.getElementById('bb-footer-brand');
+    if (b2) b2.textContent = brand;
+    var atom = document.getElementById('bb-footer-atom-xml');
+    if (atom && boot.origin) atom.setAttribute('href', boot.origin + '/atom.xml');
+
+    document.querySelectorAll('a[data-route]').forEach(function (a) {
+      var r = a.getAttribute('data-route');
+      if (r) a.setAttribute('href', r);
+    });
+
+    var themeBtn = document.getElementById('bb-theme-btn');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme');
+        document.documentElement.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/luqmanthinkpad/csrnew/gem.js"></script>
+</body>
+</html>

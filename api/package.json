@@ -1,0 +1,17 @@
+{
+  "name": "azure-swa-universal-sitemap-api",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Universal Azure Functions API for Azure Static Web Apps (SWA) \u2014 automatically detects the active SWA domain via x-ms-original-url / x-forwarded-host and serves Sitemap 0.9 XML (application/xml) and Atom 1.0 XML",
+  "type": "module",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
